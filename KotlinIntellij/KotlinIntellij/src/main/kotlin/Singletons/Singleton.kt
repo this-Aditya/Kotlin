@@ -1,50 +1,6 @@
-package Singletons
 
-class Singleton {
-    
-}
 
 
 /**
-Singletons
-When you're developing applications, you will often create multiple instances of objects.
-For example, you may have a Sandwich object which contains an ingredients property.
-For the different types of sandwiches, you will have an instance representing the sandwich.
 
-While multiple instances are important, there are sometimes concepts that you will need to represent
-in code where only one instance should exist. This is the purpose of a Singleton.
-
-Singletons are a code design pattern whereby only one instance of a type of object can exist.
-
-For example, You might need to create a class
-named Company to represent the business as a whole.
-Since there is only one company, there should not be multiple instances of the company
-in your app, therefore, you would make the Company class a singleton.
-
-In Kotlin, the singleton pattern can be implemented using the object keyword. In the example below,
-the Company class is defined as a singleton.
-
-import java.util.*;
-
-object Company {
-var companyName: String = "Little Lemon"
-var yearOpened: Int = 2019
-
-fun getTotalYearsOpen() : Int {
-return Calendar.getInstance().get(Calendar.YEAR) - yearOpened;
-}}
-
-The key difference in using this class, is that functions and properties will be accessed statically;
-no instance of the class can be created.
-
-For example, if you wanted to print out how many years the Little Lemon was open, you would use the
-following code:
-
-println(Company.getTotalYearsOpen());
-
-Note that the class name is used instead of an instance variable to call the function.
-
-Singletons are an important tool in your development toolkit. Knowing when to use them takes practice
-but as you progress in your development career, you will easily be able to identify opportunities to
-use Singletons.
  */
