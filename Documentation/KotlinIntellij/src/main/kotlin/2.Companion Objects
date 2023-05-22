@@ -1,0 +1,41 @@
+                            COMPANION OBJECTS
+
+
+ In Kotlin, a companion object is a special object within a class that allows
+ you to define static members or methods. It is similar to a singleton in that
+ it provides a way to access class-level functionality without needing an instance of the class.
+ However, there are some differences between companion objects and singletons:
+
+ Declaration: A companion object is declared inside a class, using the companion keyword, while a
+ singleton is typically implemented as a standalone object.
+
+ Naming: Companion objects do not require a separate name, as they are implicitly named
+ "Companion". Singletons can have custom names.
+
+ Here's an example to illustrate the usage of companion objects:
+
+ class MyClass {
+     companion object {
+         const val PI = 3.14159
+
+         fun printMessage() {
+             println("Companion object method")
+         }
+     }
+ }
+
+ fun main() {
+     val value = MyClass.PI // Accessing a property from the companion object
+     println(value)
+
+     MyClass.printMessage() // Calling a method from the companion object
+ }
+
+ In this example, the MyClass class contains a companion object. The companion object defines a
+ constant property PI and a method printMessage(). These members can be accessed using the class
+ name without needing an instance of the class.
+
+ To summarize, companion objects provide a way to define static members and methods within a
+ class in Kotlin. They can be accessed using the class name, similar to how you access static
+ members in other programming languages. Companion objects differ from singletons in terms of
+ their declaration syntax and naming convention.
