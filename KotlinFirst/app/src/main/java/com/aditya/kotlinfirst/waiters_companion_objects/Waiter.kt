@@ -3,7 +3,7 @@ package com.aditya.kotlinfirst.waiters_companion_objects
 import com.aditya.kotlinfirst.table_management__singleton.Personal
 
 class Waiter: Personal {
-    var id: Int = 1
+    private var id: Int = 1
     var name: String = ""
     override fun manageCustomers() {
         //Waiter can manage customers
