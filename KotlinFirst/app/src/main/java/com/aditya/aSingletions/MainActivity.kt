@@ -1,8 +1,8 @@
-package com.aditya.kotlinfirst
+package com.aditya.aSingletions
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.aditya.kotlinfirst.table_management__singleton.RestaurantTables
+import com.aditya.kotlinfirst.R
 import com.aditya.kotlinfirst.waiters_companion_objects.Waiter
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
         // Companion objects are accessed by using the class name as the qualifier it is similar
         // to static in java. If you want to read more about companion objects, you can read documen
         // provided in documentation folder of this repository
-         Waiter.hotelName
-         Waiter.hotelAddress
+//         Waiter.hotelName
+//         Waiter.hotelAddress
+
     }
 }

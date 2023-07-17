@@ -13,10 +13,10 @@
         android:theme="@style/Theme.KotlinFirst"
         tools:targetApi="31">
         <activity
-            android:name="com.aditya.kotlinfirst.SecondActivity"
+            android:name="com.aditya.kotlinfirst.com.aditya.aSingletions.SecondActivity"
             android:exported="false" />
         <activity
-            android:name="com.aditya.kotlinfirst.MainActivity"
+            android:name="com.aditya.kotlinfirst.com.aditya.aSingletions.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
